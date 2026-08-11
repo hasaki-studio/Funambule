@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Les Funambules Paris — Bistrot de quartier</title>
 <meta name="description" content="Les Funambules Paris — bistrot de quartier, cuisine du terroir, café bio, vins de propriété et convivialité.">
-<link rel="icon" href="funambule.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,7 +13,7 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,Arial,sans-serif}a{text-decoration:none;color:inherit}button{font:inherit}
 h1,h2,h3,.logo,.eyebrow{font-family:"Cormorant Garamond",Georgia,serif}
 .topbar{position:absolute;z-index:10;top:0;left:0;right:0;padding:20px 5vw;display:flex;align-items:center;justify-content:space-between;color:#fff;border-bottom:1px solid #fff2}
-.brand{display:flex;align-items:center;gap:11px}.brand-icon{width:45px;height:45px;border-radius:50%;object-fit:cover;object-position:50% 34%;filter:sepia(.15)}.logo{font-size:30px;font-weight:700;line-height:.8}.logo small{display:block;font:600 8px Inter,sans-serif;letter-spacing:.22em;text-transform:uppercase;margin-top:8px}
+.brand{display:flex;align-items:center;gap:11px}.logo{font-size:30px;font-weight:700;line-height:.8}.logo small{display:block;font:600 8px Inter,sans-serif;letter-spacing:.22em;text-transform:uppercase;margin-top:8px}
 .nav{display:flex;align-items:center;gap:25px;font-size:12px}.nav a{opacity:.92}.lang{border:1px solid #ffffff66;padding:8px 11px;border-radius:99px}.reserve{background:var(--red2);padding:12px 17px;font-weight:700}
 .hero{min-height:820px;position:relative;display:flex;align-items:flex-end;overflow:hidden;background:#16110f}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,8,6,.72),rgba(14,8,6,.17) 70%),linear-gradient(0deg,rgba(12,7,5,.73),transparent 55%),url("hero.jpg") center/cover no-repeat;transform:scale(1.015)}.hero-content{position:relative;z-index:2;padding:0 7vw 105px;color:#fff;max-width:950px}.kicker{font:600 11px Inter,sans-serif;letter-spacing:.25em;text-transform:uppercase;color:#f2d9cc;margin-bottom:20px}.hero h1{font-size:clamp(64px,8.4vw,118px);line-height:.79;margin:0 0 27px;font-weight:600;max-width:900px}.hero p{font:500 29px/1.2 "Cormorant Garamond",Georgia,serif;max-width:670px;margin:0 0 32px}.hero-actions{display:flex;gap:10px;flex-wrap:wrap}.btn{display:inline-block;padding:14px 21px;border:1px solid #fff;font-size:11px;font-weight:800;letter-spacing:.05em}.btn.primary{background:var(--red2);border-color:var(--red2)}
 .stripe{height:10px;background:repeating-linear-gradient(90deg,var(--red2) 0 34px,var(--cream) 34px 68px)}
@@ -27,13 +26,12 @@ section{padding:90px 7vw}.intro{display:grid;grid-template-columns:.8fr 1.4fr;ga
 .contact{padding-bottom:30px}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.map{min-height:440px;border:1px solid var(--line)}iframe{width:100%;height:100%;min-height:440px;border:0}.address{background:var(--red);color:#fff;padding:44px}.address h2{font-size:59px;line-height:.86;margin:12px 0 28px}.address p{font-size:13px;line-height:1.8;color:#f4e5df}.hours{border-top:1px solid #ffffff44;padding-top:18px;margin-top:25px;font-size:12px;line-height:1.8}.final{display:inline-block;margin-top:25px;background:#fff;color:var(--red);padding:14px 19px;font-size:11px;font-weight:800}
 footer{display:flex;justify-content:space-between;gap:20px;padding:28px 7vw;border-top:1px solid var(--line);font-size:10px;color:var(--muted)}
 @media(max-width:900px){.nav a{display:none}.hero{min-height:700px}.hero-content{padding:0 6vw 72px}.intro,.story,.contact-grid,.menu-panel{grid-template-columns:1fr}.menu-tabs{grid-template-columns:repeat(2,1fr)}.menu-tab{min-height:260px}.menu-photo{min-height:350px}.menu-list{padding:30px 24px}.review-grid{grid-template-columns:1fr}.facts{grid-template-columns:1fr 1fr}.menu-head{display:block}.menu-head h2,.intro h2,.story-copy h2,.reviews h2{font-size:52px}section{padding:68px 6vw}}
-@media(max-width:520px){.brand-icon{width:38px;height:38px}.logo{font-size:25px}.menu-tabs{grid-template-columns:1fr}.menu-tab{min-height:220px}.facts{grid-template-columns:1fr}.hero h1{font-size:62px}.hero p{font-size:25px}footer{flex-direction:column}}
+@media(max-width:520px){.logo{font-size:25px}.menu-tabs{grid-template-columns:1fr}.menu-tab{min-height:220px}.facts{grid-template-columns:1fr}.hero h1{font-size:62px}.hero p{font-size:25px}footer{flex-direction:column}}
 </style>
 </head>
 <body>
 <header class="topbar">
   <a class="brand" href="#">
-    <img class="brand-icon" src="funambule.jpg" alt="Illustration historique d'un funambule">
     <span class="logo">Les Funambules<small>Paris · Bistrot de quartier</small></span>
   </a>
   <nav class="nav">
@@ -131,48 +129,12 @@ footer{display:flex;justify-content:space-between;gap:20px;padding:28px 7vw;bord
 
 <script>
 const menus={
- breakfast:{
-  title:"Petit-Déjeuner",time:"07:30 — 11:30",photo:"funambule-petit-dejeuner.png",pos:"center",
-  items:[
-   ["Café bio","Espresso, allongé ou crème, torréfié avec soin.","2,80 €","Organic coffee · Café orgánico"],
-   ["Tartines du comptoir","Pain de campagne, beurre demi-sel et confiture maison.","5,50 €","Country bread & homemade jam · Pan de campo y mermelada casera"],
-   ["Œufs à la minute","Au plat ou brouillés, avec pain grillé.","7,50 €","Fried or scrambled eggs · Huevos fritos o revueltos"],
-   ["Formule Funambule","Café bio, jus d'orange frais, tartines et viennoiserie.","12,90 €","Coffee, fresh orange juice & toast · Café, zumo y tostadas"]
-  ]},
- lunch:{
-  title:"Déjeuner",time:"12:00 — 15:00",photo:"funambule-dejeuner.png",pos:"center",
-  items:[
-   ["Plat du jour","Une assiette de terroir pensée pour le déjeuner.","15,90 €","Dish of the day · Plato del día"],
-   ["Formule midi","Entrée + plat ou plat + dessert, service rapide et convivial.","19,90 €","Lunch set · Menú del día"],
-   ["Salade du marché","Produits frais du jour, œuf parfait et vinaigrette maison.","14,50 €","Market salad · Ensalada del mercado"],
-   ["Café gourmand","Espresso bio et petites douceurs maison.","7,50 €","Coffee with sweets · Café con dulces"]
-  ]},
- dinner:{
-  title:"Dîner / Apéro",time:"17:00 — 02:00",photo:"funambule-diner-apero.png",pos:"center",
-  items:[
-   ["Pièce du moment","Viande sélectionnée, garniture du bistrot.","26 €","Chef's meat selection · Carne de temporada"],
-   ["Poisson du marché","Selon l'arrivage, légumes de saison et jus citronné.","24 €","Market fish · Pescado del mercado"],
-   ["Planche du terroir","Charcuteries, cornichons et pain de campagne.","19 €","Regional sharing board · Tabla para compartir"],
-   ["Vins & cocktails","Vins de propriété au verre, bières pression et cocktails.","dès 5 €","Wines, draft beer & cocktails · Vinos, cervezas y cócteles"]
-  ]}
+ breakfast:{title:"Petit-Déjeuner",time:"07:30 — 11:30",photo:"funambule-petit-dejeuner.png",pos:"center",items:[["Café bio","Espresso, allongé ou crème, torréfié avec soin.","2,80 €","Organic coffee · Café orgánico"],["Tartines du comptoir","Pain de campagne, beurre demi-sel et confiture maison.","5,50 €","Country bread & homemade jam · Pan de campo y mermelada casera"],["Œufs à la minute","Au plat ou brouillés, avec pain grillé.","7,50 €","Fried or scrambled eggs · Huevos fritos o revueltos"],["Formule Funambule","Café bio, jus d'orange frais, tartines et viennoiserie.","12,90 €","Coffee, fresh orange juice & toast · Café, zumo y tostadas"]]},
+ lunch:{title:"Déjeuner",time:"12:00 — 15:00",photo:"funambule-dejeuner.png",pos:"center",items:[["Plat du jour","Une assiette de terroir pensée pour le déjeuner.","15,90 €","Dish of the day · Plato del día"],["Formule midi","Entrée + plat ou plat + dessert, service rapide et convivial.","19,90 €","Lunch set · Menú del día"],["Salade du marché","Produits frais du jour, œuf parfait et vinaigrette maison.","14,50 €","Market salad · Ensalada del mercado"],["Café gourmand","Espresso bio et petites douceurs maison.","7,50 €","Coffee with sweets · Café con dulces"]]},
+ dinner:{title:"Dîner / Apéro",time:"17:00 — 02:00",photo:"funambule-diner-apero.png",pos:"center",items:[["Pièce du moment","Viande sélectionnée, garniture du bistrot.","26 €","Chef's meat selection · Carne de temporada"],["Poisson du marché","Selon l'arrivage, légumes de saison et jus citronné.","24 €","Market fish · Pescado del mercado"],["Planche du terroir","Charcuteries, cornichons et pain de campagne.","19 €","Regional sharing board · Tabla para compartir"],["Vins & cocktails","Vins de propriété au verre, bières pression et cocktails.","dès 5 €","Wines, draft beer & cocktails · Vinos, cervezas y cócteles"]]}
 };
-function renderMenu(key){
- const m=menus[key];
- document.querySelectorAll(".menu-tab").forEach(b=>b.classList.toggle("active",b.dataset.key===key));
- document.getElementById("menuTitle").textContent=m.title;
- document.getElementById("menuSubtitle").textContent=m.time;
- const photo=document.getElementById("menuPhoto");
- photo.style.backgroundImage=`url("${m.photo}")`;
- photo.style.backgroundPosition=m.pos;
- document.getElementById("items").innerHTML=m.items.map(x=>`
-  <article class="item">
-   <div class="item-title"><span>${x[0]}</span><em>${x[2]}</em></div>
-   <p>${x[1]}</p>
-   <div class="langline">${x[3]}</div>
-  </article>`).join("");
-}
-document.querySelectorAll(".menu-tab").forEach(b=>b.addEventListener("click",()=>renderMenu(b.dataset.key)));
-renderMenu("breakfast");
+function renderMenu(key){const m=menus[key];document.querySelectorAll('.menu-tab').forEach(b=>b.classList.toggle('active',b.dataset.key===key));document.getElementById('menuTitle').textContent=m.title;document.getElementById('menuSubtitle').textContent=m.time;const photo=document.getElementById('menuPhoto');photo.style.backgroundImage=`url("${m.photo}")`;photo.style.backgroundPosition=m.pos;document.getElementById('items').innerHTML=m.items.map(x=>`<article class="item"><div class="item-title"><span>${x[0]}</span><em>${x[2]}</em></div><p>${x[1]}</p><div class="langline">${x[3]}</div></article>`).join('')}
+document.querySelectorAll('.menu-tab').forEach(b=>b.addEventListener('click',()=>renderMenu(b.dataset.key)));renderMenu('breakfast');
 </script>
 </body>
 </html>
